@@ -1,0 +1,82 @@
+body {
+    background: radial-gradient(#8aa5d3, #4c4a4d) no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.greet {
+    background-color: #ffffff;
+    height: auto;
+    width: 90%;
+    max-width: 350px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#nameInput {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+}
+
+#but {
+    background-color: rgb(95, 95, 232);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#but:hover {
+    background-color: rgb(35, 35, 255);
+    color: aliceblue;
+}
+
+#but:active {
+    transform: scale(0.95);
+}
+
+#nameInput:focus {
+    outline: none;
+    border-color: rgb(95, 95, 232);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .greet {
+        width: 95%;
+        padding: 15px;
+        height: 400px;
+    }
+
+    #nameInput {
+        width: 100%;
+    }
+
+    #but {
+        width: 100%;
+        max-width: 300px;
+    }
+}
